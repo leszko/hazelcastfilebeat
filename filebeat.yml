@@ -1,0 +1,10 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - <path-to-your-project>/*.log
+
+output.elasticsearch:
+  hosts: ["localhost:9200"]
+  username: elastic
+  password: changeme
